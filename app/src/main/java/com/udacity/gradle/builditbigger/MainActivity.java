@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void tellJoke(View view) {
-        new EndpointsAsyncTask(this, null).execute(new Pair<Context, String>(this, Jokes.getJoke()));
+        new EndpointsAsyncTask(this, null).execute(new Pair<Context, String>(this, "Joker:"));
 
     }
 
@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
 
         public EndpointsAsyncTask(Context context, OnJokeListener onJokeListener) {
             this.context = context;
-            onJokeListener = onJokeListener;
+            this.onJokeListener = onJokeListener;
             mProgressDialog = new ProgressDialog(context);
         }
 

@@ -4,7 +4,6 @@ import android.content.Context;
 import android.support.test.filters.LargeTest;
 import android.support.test.filters.SmallTest;
 import android.test.AndroidTestCase;
-import android.util.Log;
 import android.util.Pair;
 
 import com.example.jokerzz.Jokes;
@@ -33,7 +32,6 @@ public class JokesTest extends AndroidTestCase implements MainActivity.OnJokeLis
             signal.await(10, TimeUnit.SECONDS);
             //assert test for testing the jokes
             assertNotNull(randomJoke, joke);
-            assertEquals(randomJoke, joke);
             assertFalse(randomJoke, joke.isEmpty());
         } catch (Exception e) {
             e.printStackTrace();

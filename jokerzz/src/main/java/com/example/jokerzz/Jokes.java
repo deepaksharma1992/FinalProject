@@ -26,8 +26,8 @@ public class Jokes {
     }
 
     /**
-     * @author deepaks
      * @return the random joke from the list
+     * @author deepaks
      */
     public static String getJoke() {
         Random randomGenerator = new Random();
