@@ -13,7 +13,6 @@ import android.view.MenuItem;
 import android.view.View;
 
 import com.example.jokerpresenter.JokesActivity;
-import com.example.jokerzz.Jokes;
 import com.google.api.client.extensions.android.http.AndroidHttp;
 import com.google.api.client.extensions.android.json.AndroidJsonFactory;
 import com.google.api.client.googleapis.services.AbstractGoogleClientRequest;
@@ -30,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
     }
 
 
@@ -101,6 +101,7 @@ public class MainActivity extends AppCompatActivity {
                 // end options for devappserver
 
                 myApiService = builder.build();
+
             }
 
             String name = params[0].second;

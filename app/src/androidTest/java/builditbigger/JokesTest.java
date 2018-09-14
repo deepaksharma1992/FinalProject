@@ -35,6 +35,8 @@ public class JokesTest extends AndroidTestCase implements MainActivity.OnJokeLis
             assertFalse(randomJoke, joke.isEmpty());
         } catch (Exception e) {
             e.printStackTrace();
+            // the test will fail if exception will arise. I don't think that we need to pass the test in case of any exception
+            fail();
         }
 
     }
